@@ -26,8 +26,8 @@ rsa_key_file = key_file_path + "rsa_key"
 rsa_public_key = ""
 aes_key = ""
 aes_key_iv = ""
-input_data = ""
 aes_key_encrypted = ""
+input_data = ""
 cipher = ""
 
 
@@ -51,7 +51,7 @@ def load_rsa_public_key():
 
 		except:
 			print("[錯誤] RSA 公鑰讀取失敗，請執行 decryption 程式重新產生 RSA 金鑰")
-			print(sys.exc_info())
+			# print(sys.exc_info())
 			return False
 
 		return True
@@ -130,7 +130,7 @@ def encrypt_aes_key():
 	global aes_key_encrypted
 
 	cipher_rsa = PKCS1_OAEP.new(rsa_public_key)
-	aes_key_encrypted = cipher_rsa.encrypt(input_data)
+	aes_key_encrypted = cipher_rsa.encrypt(aes_key)
 
 	print("[狀態] AES 金鑰加密完成")
 
@@ -139,7 +139,11 @@ def encrypt_aes_key():
 def save_cipher():
 	Path(data_file_path).mkdir(parents=True, exist_ok=True)
 
-	out_cipher = base64.b64encode(cipher).decode(encoding="utf-8")
+	cipher_iv = aes_key_iv + cipher
+	# print(aes_key_iv)
+	# print(cipher_iv)
+	# print(cipher)
+	out_cipher = base64.b64encode(cipher_iv).decode(encoding="utf-8")
 	f = codecs.open(cipher_file, "w", "utf_8")
 	f.write(out_cipher)
 	f.close()
@@ -155,6 +159,9 @@ def save_encrypted_aes_key():
 	f = codecs.open(aes_key_encrypted_file, "w", "utf_8")
 	f.write(out_key)
 	f.close()
+	# print(aes_key_encrypted)
+	# print(out_key)
+	# print(aes_key)
 
 
 def finish_encrypt():
