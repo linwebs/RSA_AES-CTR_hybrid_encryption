@@ -1,6 +1,6 @@
 # 資訊安全與管理 作業 2 1.2
 RSA + AES-CBC 混合式加密系統
-https://hackmd.io/@linwebs-ncyu/Sk4EKk5ov
+https://hackmd.io/@linwebs-ncyu/Hki72vcsw
 > Linwebs 2020.12
 > NCYU Information Security and Management
 
@@ -13,7 +13,7 @@ The followings are some popular packages for Cryptography:
 
 1. Please apply **two** packages (each encryption mode for one package) to implement the **hybrid encryption**: RSA + AES-CBC and RSA + AES-CTR. You should encrypt plaintext les into ciphertext les, and then decrypt them. Observe and analyze your output results.
 
-Jave RSA + AES-CTR
+Python RSA + AES-CTR
 
 ## 環境
 * 程式語言: Python
@@ -21,15 +21,15 @@ Jave RSA + AES-CTR
 * Python 執行版本: 3.x
 * 使用函式庫
 	* base64 [Base64 編碼解碼]
-	* codecs [檔案讀寫]
-	* sys [except 錯誤訊息]
 	* binascii [bytes 格式化]
-	* pathlib [資料夾建立]
+	* codecs [檔案讀寫]
 	* os [檔案路徑檢查]
-	* Crypto.Random [取得隨機 bytes]
-	* Crypto.Util [Counter]
+	* pathlib [資料夾建立]
+	* sys [except 錯誤訊息]
 	* Crypto.Cipher [AES、RSA]
 	* Crypto.PublicKey [RSA]
+	* Crypto.Random [取得隨機 bytes]
+	* Crypto.Util [Counter]
 
 ## 使用說明
 1. 請先執行 Decryption.java 產生 RSA 金鑰
