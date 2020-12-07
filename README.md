@@ -1,5 +1,5 @@
 # 資訊安全與管理 作業 2 1.2
-RSA + AES-CBC 混合式加密系統
+RSA + AES-CTR 混合式加密系統
 https://hackmd.io/@linwebs-ncyu/Hki72vcsw
 > Linwebs 2020.12
 > NCYU Information Security and Management
@@ -32,9 +32,9 @@ Python RSA + AES-CTR
 	* Crypto.Util [Counter]
 
 ## 使用說明
-1. 請先執行 Decryption.java 產生 RSA 金鑰
-2. 執行 Encryption.java 進行加密
-3. 執行 Decryption.java 進行解密
+1. 請先執行 decryption.py 產生 RSA 金鑰
+2. 執行 encryption.py 進行加密
+3. 執行 decryption.py 進行解密
 
 ※ 請確保擁有執行程式當層資料夾及子資料夾的讀寫權限
 ※ 請確保讀入的文字檔案編碼為 UTF-8 不帶簽名
@@ -186,19 +186,19 @@ bwIDAQAB
 > [name=GURU99]
 > * [Python3 教學 #04 (Ch6~Ch8: Try-catch 錯誤處理)](https://www.brilliantcode.net/753/python3-6-try-catch/?cli_action=1607266997.27)
 > [name=Andy Wang]
-> * https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3
-> * https://stackoverflow.com/questions/5000946/how-to-generate-strong-one-time-session-key-for-aes-in-python
-> * https://stackoverflow.com/questions/934160/write-to-utf-8-file-in-python
-> * https://stackoverflow.com/questions/491921/unicode-utf-8-reading-and-writing-to-files-in-python
-> * https://stackoverflow.com/questions/30056762/rsa-encryption-and-decryption-in-python
-> * https://stackoverflow.com/questions/14714968/pycrypto-aes-ctr-implementation
-> * https://stackoverflow.com/questions/14716338/pycrypto-how-does-the-initialization-vector-work
-> * https://stackoverflow.com/questions/30056762/rsa-encryption-and-decryption-in-python
-> * https://stackoverflow.com/questions/33269020/convert-byte-string-to-base64-encoded-string-output-not-being-a-byte-string
-> * https://stackoverflow.com/questions/34279901/python-rsa-encryption
-> * https://stackoverflow.com/questions/21327491/using-pycrypto-how-to-import-a-rsa-public-key-and-use-it-to-encrypt-a-string
-> * https://stackoverflow.com/questions/12524994/encrypt-decrypt-using-pycrypto-aes-256
-> * https://stackoverflow.com/questions/44427934/notimplementederror-use-module-crypto-cipher-pkcs1-oaep-instead-error
-> * https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3
-> * https://stackoverflow.com/questions/606191/convert-bytes-to-a-string
-> * https://stackoverflow.com/questions/20024490/how-to-split-a-byte-string-into-separate-bytes-in-python/20024864
+> * [stackover flow - Best way to convert string to bytes in Python 3?](https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3)
+> * [stackover flow - How to generate strong one time session key for AES in python](https://stackoverflow.com/questions/5000946/how-to-generate-strong-one-time-session-key-for-aes-in-python)
+> * [stackover flow - Write to UTF-8 file in Python](https://stackoverflow.com/questions/934160/write-to-utf-8-file-in-python)
+> * [stackover flow - Unicode (UTF-8) reading and writing to files in Python](https://stackoverflow.com/questions/491921/unicode-utf-8-reading-and-writing-to-files-in-python)
+> * [stackover flow - RSA encryption and decryption in Python](https://stackoverflow.com/questions/30056762/rsa-encryption-and-decryption-in-python)
+> * [stackover flow - Pycrypto AES-CTR implementation](https://stackoverflow.com/questions/14714968/pycrypto-aes-ctr-implementation)
+> * [stackover flow - PyCrypto - How does the Initialization Vector work?](https://stackoverflow.com/questions/14716338/pycrypto-how-does-the-initialization-vector-work)
+> * [stackover flow - RSA encryption and decryption in Python](https://stackoverflow.com/questions/30056762/rsa-encryption-and-decryption-in-python)
+> * [stackover flow - Convert byte string to base64-encoded string (output not being a byte string)](https://stackoverflow.com/questions/33269020/convert-byte-string-to-base64-encoded-string-output-not-being-a-byte-string)
+> * [stackover flow - Python RSA encryption](https://stackoverflow.com/questions/34279901/python-rsa-encryption)
+> * [stackover flow - Using pycrypto, how to import a RSA public key and use it to encrypt a string?](https://stackoverflow.com/questions/21327491/using-pycrypto-how-to-import-a-rsa-public-key-and-use-it-to-encrypt-a-string)
+> * [stackover flow - Encrypt & Decrypt using PyCrypto AES 256](https://stackoverflow.com/questions/12524994/encrypt-decrypt-using-pycrypto-aes-256)
+> * [stackover flow - NotImplementedError: Use module Crypto.Cipher.PKCS1_OAEP instead error](https://stackoverflow.com/questions/44427934/notimplementederror-use-module-crypto-cipher-pkcs1-oaep-instead-error)
+> * [stackover flow - Best way to convert string to bytes in Python 3?](https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3)
+> * [stackover flow - Convert bytes to a string](https://stackoverflow.com/questions/606191/convert-bytes-to-a-string)
+> * [stackover flow - How to split a byte string into separate bytes in python](https://stackoverflow.com/questions/20024490/how-to-split-a-byte-string-into-separate-bytes-in-python/20024864)
